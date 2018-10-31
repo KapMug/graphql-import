@@ -28,7 +28,15 @@ const rootFields = ['Query', 'Mutation', 'Subscription']
 
 const read = (schema: string, schemas?: { [key: string]: string }) => {
   if (isFile(schema)) {
-    return fs.readFileSync(schema, { encoding: 'utf8' })
+    const readFile = file => fs.readFileSync(file, { encoding: 'utf8' });
+    try {
+      return readFile(schema);
+    } catch (e) {
+      if (e.code === 'ENOENT') {
+        const resolved = require.resolve(schema);
+        return readFile(resolved);
+      }
+    }
   }
   return schemas ? schemas[schema] : schema
 }

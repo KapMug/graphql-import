@@ -1,6 +1,6 @@
 {
-  "name": "graphql-import",
-  "version": "0.0.0-semantic-release",
+  "name": "@kapmug/graphql-import",
+  "version": "0.7.1",
   "engines": {
     "node": ">=4.0.0"
   },
