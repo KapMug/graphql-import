@@ -1,6 +1,6 @@
 {
   "name": "@kapmug/graphql-import",
-  "version": "0.7.2",
+  "version": "0.7.3",
   "engines": {
     "node": ">=4.0.0"
   },
@@ -42,7 +42,7 @@
     "docs:publish": "cp ./now.json ./docs && cd docs && now --public -f && now alias && now rm --yes --safe graphql-import & cd .."
   },
   "peerDependencies": {
-    "graphql": "../14.5.6"
+    "graphql": "14.5.6"
   },
   "devDependencies": {
     "@types/graphql": "14.0.3",
