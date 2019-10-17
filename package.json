@@ -1,6 +1,6 @@
 {
   "name": "@kapmug/graphql-import",
-  "version": "0.7.3",
+  "version": "0.7.4",
   "engines": {
     "node": ">=4.0.0"
   },
@@ -42,7 +42,7 @@
     "docs:publish": "cp ./now.json ./docs && cd docs && now --public -f && now alias && now rm --yes --safe graphql-import & cd .."
   },
   "peerDependencies": {
-    "graphql": "14.5.6"
+    "graphql": "14.5.8"
   },
   "devDependencies": {
     "@types/graphql": "14.0.3",
@@ -51,7 +51,7 @@
     "@types/resolve-from": "0.0.18",
     "ava": "0.25.0",
     "ava-ts": "0.25.2",
-    "graphql": "14.5.6",
+    "graphql": "14.5.8",
     "nyc": "11.9.0",
     "tap-xunit": "2.3.0",
     "ts-node": "7.0.1",
